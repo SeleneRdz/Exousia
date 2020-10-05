@@ -14,11 +14,11 @@ public class Scr_MainCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
          x += Time.deltaTime * Input.GetAxisRaw("Mouse Y") * 100    ;
          transform.rotation = Quaternion.Euler(x,0,0);
          transform.position = new Vector3(0,x/10,(x/10)-10);
-         
+         */
          
     }
 
