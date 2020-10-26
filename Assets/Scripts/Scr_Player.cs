@@ -4,34 +4,52 @@ using UnityEngine;
 
 public class Scr_Player : MonoBehaviour
 {
-  public int vida;
-  public Vector3 posicion;
-  public float velocidad; 
-  Animator personajeAnim;
+  public float maxSpeed = 5f;
+  public float speed = 2f; 
+  public bool grounded;
+  public float jumpPower = 6.5f;
+
+  private Animator anim;
+  private Rigidbody2D rb2d;
+  private bool jump;
 
     // Start is called before the first frame update
     void Start()
     {
-      personajeAnim = GetComponent<Animator>();
+      rb2d = GetComponent<Rigidbody2D>();
+      anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-      float MoverLateral = Input.GetAxisRaw("Horizontal");
-      float MoverHorizontal = Input.GetAxisRaw("Vertical");
-      
-      posicion = new Vector3(MoverLateral, MoverHorizontal, 0);
-      posicion = posicion.normalized;
-      transform.position += posicion * velocidad * Time.deltaTime;
-      personajeAnim.SetFloat("VelMovimiento", Mathf.Abs(MoverLateral));
 
+    void Update(){
+      anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+      anim.SetBool("Grounded", grounded);
 
-      if(MoverLateral <= -1){
-        transform.localScale = new Vector3(-1, 1, 1);
+      if(Input.GetKeyDown(KeyCode.UpArrow)){
+        jump = true;
       }
-      if(MoverLateral >= 1){
-        transform.localScale = new Vector3(1, 1, 1);
+    }
+
+    void FixedUpdate(){
+
+      float h = Input.GetAxis("Horizontal");
+
+      rb2d.AddForce(Vector2.right * speed * h);
+
+      float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
+      rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
+
+      if(h > 0.1f){
+        transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+      }
+
+      if(h < -0.1f){
+        transform.localScale = new Vector3(-0.1f,0.1f,0.1f);
+      }
+
+      if(jump){
+        rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
+        jump = false;
       }
     }
 }
