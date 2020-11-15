@@ -40,16 +40,18 @@ public class Scr_Player : MonoBehaviour
       rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
       if(h > 0.1f){
-        transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
       }
 
       if(h < -0.1f){
-        transform.localScale = new Vector3(-0.1f,0.1f,0.1f);
+        transform.localScale = new Vector3(-0.7f,0.7f,0.7f);
       }
 
       if(jump){
         rb2d.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
         jump = false;
       }
+
+      
     }
 }
