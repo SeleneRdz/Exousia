@@ -37,7 +37,7 @@ public class Scr_Player : MonoBehaviour
     void FixedUpdate(){
 
       Vector3 fixedVelocity = rb2d.velocity;
-      fixedVelocity.x *= 0.8f;
+      fixedVelocity.x *= 0.9f;
       float h = Input.GetAxis("Horizontal");
 
       if(grounded && (Mathf.Abs(h) < Mathf.Abs(H))){
