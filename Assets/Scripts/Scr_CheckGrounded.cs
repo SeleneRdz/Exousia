@@ -14,6 +14,17 @@ public class Scr_CheckGrounded : MonoBehaviour
         player = GetComponentInParent<Scr_Player>();
     }
 
+    void FixedUpdate(){
+        float h = Input.GetAxis("Horizontal");
+
+        if(h != 0){
+            player.moving = true;
+        }else
+        {
+            player.moving = false;
+        }
+    }
+
     void OnCollisionStay2D(Collision2D col){
         if(col.gameObject.tag == "Ground"){
             player.grounded = true;
