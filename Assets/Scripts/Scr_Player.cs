@@ -8,6 +8,7 @@ public class Scr_Player : MonoBehaviour
   public float speed = 2f; 
   public bool grounded;
   public bool moving;
+  public bool attacking;
   public float jumpPower = 6.5f;
 
   private Animator anim;
@@ -28,6 +29,7 @@ public class Scr_Player : MonoBehaviour
       anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
       anim.SetBool("Grounded", grounded);
       anim.SetBool("Moving", moving);
+      anim.SetBool("Attack", attacking);
 
       if(Input.GetKeyDown(KeyCode.UpArrow) && grounded){
         jump = true;
@@ -46,15 +48,9 @@ public class Scr_Player : MonoBehaviour
 
       if(grounded && Mathf.Abs(h) <= 0.1 && Mathf.Abs(H) >= 0.1 ){
         rb2d.velocity *= 0.2f;
-      }
-
-
-
+      } 
       H = h;
-      Debug.Log(h);
 
-
-      
       rb2d.AddForce(Vector2.right * speed * h);
 
       float limitedSpeed = Mathf.Clamp(rb2d.velocity.x, -maxSpeed, maxSpeed);
