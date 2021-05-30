@@ -21,11 +21,8 @@ public class Scr_MovimientoFondo : MonoBehaviour
     void OnBecameInvisible(){
         Vector3 reset;
 
-        Debug.Log("nube fuera");
-
         reset = new Vector3(25, 0, 0);
 
         transform.position += reset;
-        Debug.Log(transform.position);
     }
 }

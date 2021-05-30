@@ -7,6 +7,7 @@ public class Scr_MovimientoLejania : MonoBehaviour
     public float Velocidad;
     public GameObject personaje;
     private Vector3 posicion;
+    private Vector3 reset;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,59 @@ public class Scr_MovimientoLejania : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = ((personaje.transform.position + posicion) * Velocidad);
+        
+        if((personaje.transform.position.x - transform.position.x) > (18.2)){
+
+            reset = new Vector3(18.2f, 0, 0);
+
+            transform.position += reset;
+
+        }
+
+        if((personaje.transform.position.x - transform.position.x) > (18.2)){
+
+            reset = new Vector3(18.2f, 0, 0);
+
+            transform.position += reset;
+
+        }
+
+        if((personaje.transform.position.x - transform.position.x) > (18.2)){
+
+            reset = new Vector3(18.2f, 0, 0);
+
+            transform.position += reset;
+
+        }
+
+        if((personaje.transform.position.x - transform.position.x) > (18.2)){
+
+            reset = new Vector3(18.2f, 0, 0);
+
+            transform.position += reset;
+
+        }
+
+        if((personaje.transform.position.x - transform.position.x) > (18.2)){
+
+            reset = new Vector3(18.2f, 0, 0);
+
+            transform.position += reset;
+
+        }
+
+        if((personaje.transform.position.x - transform.position.x) > (18.2)){
+
+            reset = new Vector3(18.2f, 0, 0);
+
+            transform.position += reset;
+
+        }
+
+
+
+   
     }
+
+    
 }

@@ -7,8 +7,8 @@ public class Scr_Player : MonoBehaviour
   public float maxSpeed = 5f;
   public float speed = 2f; 
   public bool grounded;
+  public bool swimming;
   public bool moving;
-  public bool attacking;
   public float jumpPower = 6.5f;
 
   private Animator anim;
@@ -16,25 +16,81 @@ public class Scr_Player : MonoBehaviour
   private bool jump;
   private float H;
   private bool stop;
+  private bool attack;
+  public bool talk;
+  private SpriteRenderer sprite;
+  private bool movement = true;
+  private GameObject healthbar;
 
     // Start is called before the first frame update
     void Start()
     {
       rb2d = GetComponent<Rigidbody2D>();
       anim = GetComponent<Animator>();
+      sprite = GetComponent<SpriteRenderer>();
+      healthbar = GameObject.Find("HealthBar");
     }
+
+
 
 
     void Update(){
       anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
       anim.SetBool("Grounded", grounded);
+      //anim.SetBool("Swimming", swimming);
       anim.SetBool("Moving", moving);
-      anim.SetBool("Attack", attacking);
 
       if(Input.GetKeyDown(KeyCode.UpArrow) && grounded){
         jump = true;
       }
+
+      if(Input.GetKeyDown(KeyCode.O))
+      {
+        talk = true;
+      }
+
+      Handleinput();
+
     }
+
+
+
+
+    private void Handleinput()
+    {
+      if(Input.GetKeyDown(KeyCode.P))
+      {
+        attack = true;
+      }
+    }
+
+
+
+
+
+    private void Handleattack()
+    {
+      if(attack)
+      {
+        anim.SetTrigger("attack");
+      }
+    }
+
+
+
+
+
+    private void ResetValues()
+    {
+      attack = false;
+      talk = false;
+    }
+
+    
+
+
+
+
 
     void FixedUpdate(){
 
@@ -57,11 +113,11 @@ public class Scr_Player : MonoBehaviour
       rb2d.velocity = new Vector2(limitedSpeed, rb2d.velocity.y);
 
       if(h > 0.1f){
-        transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        transform.localScale = new Vector3(1f, 1f, 1f);
       }
 
       if(h < -0.1f){
-        transform.localScale = new Vector3(-0.7f,0.7f,0.7f);
+        transform.localScale = new Vector3(-1f,1f,1f);
       }
 
       if(jump){
@@ -69,6 +125,51 @@ public class Scr_Player : MonoBehaviour
         jump = false;
       }
 
+      Handleattack();
+      ResetValues();
+
+      if(!movement) h = 0;
       
     }
+
+
+
+
+
+
+   public void EnemyJump()
+    {
+        jump = true;
+    }
+
+
+
+
+
+    public void EnemyBack(float enemyPosX)
+    {
+        healthbar.SendMessageUpwards("TakeDamage", 20f);
+
+        jump = true;
+
+        float side = Mathf.Sign(enemyPosX - transform.position.x);
+        rb2d.AddForce(Vector2.left * side * jumpPower, ForceMode2D.Impulse);
+
+        movement = false;
+        Invoke("EnableMovement", 0.6f);
+
+        sprite.color = Color.red;
+    }
+
+
+
+
+    
+    void EnableMovement()
+    {
+        movement = true;
+        sprite.color = Color.white;
+    }
+
+    
 }

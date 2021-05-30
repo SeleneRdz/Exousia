@@ -36,4 +36,18 @@ public class Scr_CheckGrounded : MonoBehaviour
             player.grounded = false;
         }
     }
+
+    void OnTriggerStay2D(Collider2D col){
+
+        if(col.gameObject.tag == "Water"){
+            player.grounded = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col){
+        if(col.gameObject.tag == "Water"){
+            player.grounded = false;
+        }
+    }
+    
 }
