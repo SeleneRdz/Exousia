@@ -23,13 +23,13 @@ public class Scr_TalkPlayer : MonoBehaviour
 
 
     void FixedUpdate(){
-        talking = player.talk; // No jala no copia el valor de scr_player
+        // talking = player.talk; // No jala no copia el valor de scr_player
 
-        float dist = Vector3.Distance(player.transform.position, transform.position);
+        // float dist = Vector3.Distance(player.transform.position, transform.position);
 
-        if (dist < visionRadius && talking){
-            Debug.Log(dist);                    //hace falta añadir que el cuadro de dialogo aparezca
-        }
+        // if (dist < visionRadius && talking){
+        //     Debug.Log(dist);                    //hace falta añadir que el cuadro de dialogo aparezca
+        // }
 
     }
 

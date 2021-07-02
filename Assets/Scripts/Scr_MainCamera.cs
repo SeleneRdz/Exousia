@@ -7,6 +7,7 @@ public class Scr_MainCamera : MonoBehaviour
     public float x;
     public GameObject personaje;
     private Vector3 posicion;
+    private bool orthographicCamera = true;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,12 @@ public class Scr_MainCamera : MonoBehaviour
          transform.rotation = Quaternion.Euler(x,0,0);
          transform.position = new Vector3(0,x/10,(x/10)-10);
          */
+
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            orthographicCamera = !orthographicCamera;
+            Camera.main.orthographic = orthographicCamera;
+        }
          
     }
 

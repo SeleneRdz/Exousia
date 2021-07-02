@@ -59,10 +59,12 @@
      <Compile Include="Assets\Scripts\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Menu\Scr_Menu.cs" />
      <Compile Include="Assets\Scripts\Scr_Animals.cs" />
+     <Compile Include="Assets\Scripts\Scr_CheckAttack.cs" />
      <Compile Include="Assets\Scripts\Scr_CheckGrounded.cs" />
      <Compile Include="Assets\Scripts\Scr_Fadeout.cs" />
      <Compile Include="Assets\Scripts\Scr_Fuente.cs" />
      <Compile Include="Assets\Scripts\Scr_Intro.cs" />
+     <Compile Include="Assets\Scripts\Scr_Login.cs" />
      <Compile Include="Assets\Scripts\Scr_LookPlayer.cs" />
      <Compile Include="Assets\Scripts\Scr_MainCamera.cs" />
      <Compile Include="Assets\Scripts\Scr_MovimientoFondo.cs" />
