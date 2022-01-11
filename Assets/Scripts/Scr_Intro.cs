@@ -17,7 +17,7 @@ public class Scr_Intro : MonoBehaviour
     {
         Debug.Log(anim.GetCurrentAnimatorStateInfo(0).IsName("Escena_intro"));
         if(!anim.GetCurrentAnimatorStateInfo(0).IsName("Escena_intro")){
-            SceneManager.LoadScene("Login");
+            SceneManager.LoadScene("PressKey");
         }
     }
 }

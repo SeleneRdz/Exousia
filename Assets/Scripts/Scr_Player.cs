@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class Scr_Player : MonoBehaviour
 {
+  
   public float maxSpeed = 5f;
   public float speed = 2f; 
-  public bool grounded;
+  public bool grounded = true;
   public bool swimming;
   public bool moving;
   public float jumpPower = 6.5f;
 
   private Animator anim;
   private Rigidbody2D rb2d;
+  public GameObject pauseScreen;
   private bool jump;
   private float H;
   private bool stop;
   private bool attack;
+  private bool pausescreen = false;
   public bool talk;
   private SpriteRenderer sprite;
   private bool movement = true;
   private GameObject healthbar;
+
+  private bool appearance = true;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +36,15 @@ public class Scr_Player : MonoBehaviour
       healthbar = GameObject.Find("HealthBar");
     }
 
+    private void AppareanceIsFalse(){
+        appearance = false;
+    }
+
 
 
 
     void Update(){
+      anim.SetBool("Appearance",appearance);
       anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
       anim.SetBool("Grounded", grounded);
       //anim.SetBool("Swimming", swimming);
@@ -42,6 +52,16 @@ public class Scr_Player : MonoBehaviour
 
       if(Input.GetKeyDown(KeyCode.UpArrow) && grounded){
         jump = true;
+      }
+
+      if(Input.GetKeyDown(KeyCode.Escape)){
+        if(pausescreen){
+          pausescreen = false;
+          pauseScreen.SetActive(false);
+        }else{
+          pausescreen = true;
+          pauseScreen.SetActive(true);
+        }
       }
 
       if(Input.GetKeyDown(KeyCode.O))

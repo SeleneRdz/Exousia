@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Scr_Menu : MonoBehaviour
 {
     public GameObject flecha, lista;
+    public GameObject OptinsInterface;
+    public GameObject ChargeInterface;
     int indice = 0;
 
     // Start is called before the first frame update
@@ -33,7 +35,7 @@ public class Scr_Menu : MonoBehaviour
 
     void Dibujar(){
         Transform opcion = lista.transform.GetChild(indice);
-        flecha.transform.position = opcion.position;
+        flecha.transform.position = new Vector3(opcion.position.x-2.3f, opcion.position.y+0.2f, 0f);
 
 
     }
@@ -41,13 +43,53 @@ public class Scr_Menu : MonoBehaviour
     void Accion(){
         Transform opcion = lista.transform.GetChild(indice);
 
-        if(opcion.gameObject.name == "Salir"){
-            Application.Quit();
-        }
 
         if(opcion.gameObject.name == "Inicio"){
-            SceneManager.LoadScene("Olimpo");
+            Inicio();
         }
 
+        if(opcion.gameObject.name == "Cargar"){
+            Charge();
+        }
+
+        if(opcion.gameObject.name == "Opciones"){
+            Charge();
+        }
+
+        if(opcion.gameObject.name == "Salir"){
+            Exit();
+        }
+    }
+
+    public void Inicio(){
+            SceneManager.LoadScene("Olimpo");
+    }
+
+    public void Exit(){
+            Application.Quit();
+    }
+
+    public void Charge(){
+        lista.SetActive(false);
+        ChargeInterface.SetActive(true);
+        flecha.SetActive(false);
+    }
+
+    public void ExitCharge(){
+        ChargeInterface.SetActive(false);
+        lista.SetActive(true);
+        flecha.SetActive(true);
+    }
+
+    public void Options(){
+        OptinsInterface.SetActive(true);
+        lista.SetActive(false);
+        flecha.SetActive(false);
+    }
+
+    public void ExitOptions(){
+        OptinsInterface.SetActive(false);
+        lista.SetActive(true);
+        flecha.SetActive(true);
     }
 }

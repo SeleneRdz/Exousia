@@ -37,7 +37,7 @@ public class Scr_Login : MonoBehaviour
 
         CheckUser(mL_userNameInput.text, mL_passwordInput.text, delegate(Response response){
             if(response.message == "valid"){
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("Intro");
             }
             mL_messageLabel.text = response.message;
         });
@@ -77,12 +77,12 @@ public class Scr_Login : MonoBehaviour
     }
 
     public IEnumerator CO_CreateUser(string userName, string email, string password, Action<Response> response){
-        WWWForm form = new WWWForm();
-        form.AddField("userName",userName);
-        form.AddField("email",email);
-        form.AddField("password",password);
+        SecureForm form = new SecureForm();
+        form.secureForm.AddField("userName",userName);
+        form.secureForm.AddField("email",email);
+        form.secureForm.AddField("password",password);
 
-        WWW w = new WWW("http://localhost/Exousia_DB/SignIn.php",form);
+        WWW w = new WWW("http://localhost/Exousia_DB/SignIn.php",form.secureForm);
 
         yield return w;
 
@@ -95,11 +95,11 @@ public class Scr_Login : MonoBehaviour
     }
 
     public IEnumerator CO_CheckUser(string userName, string password, Action<Response> response){
-        WWWForm form = new WWWForm();
-        form.AddField("userName",userName);
-        form.AddField("password",password);
+        SecureForm form = new SecureForm();
+        form.secureForm.AddField("userName",userName);
+        form.secureForm.AddField("password",password);
 
-        WWW w = new WWW("http://localhost/Exousia_DB/Login.php",form);
+        WWW w = new WWW("http://localhost/Exousia_DB/Login.php",form.secureForm);
 
         yield return w;
 
