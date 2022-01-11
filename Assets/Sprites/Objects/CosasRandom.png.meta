@@ -1,0 +1,713 @@
+fileFormatVersion: 2
+guid: 53de3b6662bb28042ad4d5e3ef022a79
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6090364286085922749
+    second: CosasRandom_0
+  - first:
+      213: -5876059089624595619
+    second: CosasRandom_1
+  - first:
+      213: 3995289988939287798
+    second: CosasRandom_2
+  - first:
+      213: 7973120405408548167
+    second: CosasRandom_3
+  - first:
+      213: 5090909774866933673
+    second: CosasRandom_4
+  - first:
+      213: 6261345931361837122
+    second: CosasRandom_5
+  - first:
+      213: -4287431248949933177
+    second: CosasRandom_6
+  - first:
+      213: -8184939869065415354
+    second: CosasRandom_7
+  - first:
+      213: 5756643077199186955
+    second: CosasRandom_8
+  - first:
+      213: -7092835738765694497
+    second: CosasRandom_9
+  - first:
+      213: 3917236095076558862
+    second: CosasRandom_10
+  - first:
+      213: -5038128600596462481
+    second: CosasRandom_11
+  - first:
+      213: -9069870720989205575
+    second: CosasRandom_12
+  - first:
+      213: 6610172286889213347
+    second: CosasRandom_13
+  - first:
+      213: -8386634941727732079
+    second: CosasRandom_14
+  - first:
+      213: 4997882793170048152
+    second: CosasRandom_15
+  - first:
+      213: 1990137469667639631
+    second: CosasRandom_16
+  - first:
+      213: 2113165230594905692
+    second: CosasRandom_17
+  - first:
+      213: -8778208669091661076
+    second: CosasRandom_18
+  - first:
+      213: -558342390701746497
+    second: CosasRandom_19
+  - first:
+      213: 2422292727915353905
+    second: CosasRandom_20
+  - first:
+      213: -321648659173338321
+    second: CosasRandom_21
+  - first:
+      213: -3585480020634632282
+    second: CosasRandom_22
+  - first:
+      213: 5332831608860262108
+    second: CosasRandom_23
+  - first:
+      213: 6677006540343037587
+    second: CosasRandom_0
+  - first:
+      213: 1572141574374791313
+    second: CosasRandom_1
+  - first:
+      213: -4023063610672959249
+    second: CosasRandom_2
+  - first:
+      213: 6605267371363753884
+    second: CosasRandom_3
+  - first:
+      213: -14892146012965003
+    second: CosasRandom_4
+  - first:
+      213: -4107106135694145051
+    second: CosasRandom_5
+  - first:
+      213: -8534341910963550927
+    second: CosasRandom_6
+  - first:
+      213: 8661956836667851766
+    second: CosasRandom_7
+  - first:
+      213: -2166160124240975659
+    second: CosasRandom_8
+  - first:
+      213: 2479288466345528069
+    second: CosasRandom_9
+  - first:
+      213: 8835133281246195536
+    second: CosasRandom_10
+  - first:
+      213: 7059488196884444137
+    second: CosasRandom_11
+  - first:
+      213: 3482320547220182094
+    second: CosasRandom_12
+  - first:
+      213: 2791576432510799297
+    second: CosasRandom_13
+  - first:
+      213: -7508644127247834404
+    second: CosasRandom_14
+  - first:
+      213: -3799235014601164128
+    second: CosasRandom_15
+  - first:
+      213: 8823540331366897583
+    second: CosasRandom_16
+  - first:
+      213: -7509383076018046882
+    second: CosasRandom_17
+  - first:
+      213: -3893739998587308033
+    second: CosasRandom_18
+  - first:
+      213: 3983047566294478032
+    second: CosasRandom_19
+  - first:
+      213: 6280262417734333440
+    second: CosasRandom_20
+  - first:
+      213: 8095178550296718784
+    second: CosasRandom_21
+  - first:
+      213: -6264096429520043965
+    second: CosasRandom_22
+  - first:
+      213: 4450936649339382936
+    second: CosasRandom_23
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CosasRandom_0
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 545
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e4b18721e79ac50800000000000000
+      internalID: 6677006540343037587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 456
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1989b3dae6e51d510800000000000000
+      internalID: 1572141574374791313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 458
+        width: 60
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0b90116f43b28c0800000000000000
+      internalID: -4023063610672959249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_3
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 455
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f5d949daf9aab50800000000000000
+      internalID: 6605267371363753884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 457
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57734fe0ca71bcff0800000000000000
+      internalID: -14892146012965003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_5
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 456
+        width: 53
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e98f1fdab0a007c0800000000000000
+      internalID: -4107106135694145051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 377
+        width: 76
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1350a45bf3def8980800000000000000
+      internalID: -8534341910963550927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_7
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 296
+        width: 69
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f38a5599d3753870800000000000000
+      internalID: 8661956836667851766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_8
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 298
+        width: 73
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8200408d040f1e0800000000000000
+      internalID: -2166160124240975659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_9
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 380
+        width: 73
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b8f3c69b3386220800000000000000
+      internalID: 2479288466345528069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_12
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 377
+        width: 69
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e445a1b6610b35030800000000000000
+      internalID: 3482320547220182094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_13
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 378
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd882799fbadb620800000000000000
+      internalID: 2791576432510799297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_15
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 299
+        width: 71
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aab87822e7664bc0800000000000000
+      internalID: -3799235014601164128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 224
+        width: 78
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7d478ae23837a70800000000000000
+      internalID: 8823540331366897583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_17
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 223
+        width: 47
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e583d97f0ef49c790800000000000000
+      internalID: -7509383076018046882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_18
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 223
+        width: 56
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff73978e918a6f9c0800000000000000
+      internalID: -3893739998587308033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 151
+        width: 213
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc677098a0a64730800000000000000
+      internalID: 3983047566294478032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_20
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 79
+        width: 226
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0047a490569f72750800000000000000
+      internalID: 6280262417734333440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 78
+        width: 73
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd2ccb500ad75070800000000000000
+      internalID: 8095178550296718784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_22
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 74
+        width: 67
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3404aa76c757119a0800000000000000
+      internalID: -6264096429520043965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CosasRandom_23
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 77
+        width: 54
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c24adec47e4cd30800000000000000
+      internalID: 4450936649339382936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
