@@ -487,13 +487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f623404ad1ead45bf608ab8e00dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagesTexts:
-  - Lenguaje
-  - Lenguage
-  - Langue
-  - Sprache
-  - "\u042F\u0437\u044B\u043A"
-  MyTextField: {fileID: 185077169}
 --- !u!114 &185077169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13185,6 +13178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1156323048}
   - component: {fileID: 1156323047}
+  - component: {fileID: 1156323049}
   m_Layer: 0
   m_Name: Hermes-1
   m_TagString: Untagged
@@ -13256,6 +13250,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1156323049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156323046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c5f249ed4c3e540a3261f0bdae5dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personaje: {fileID: 379470196}
 --- !u!1 &1181891468
 GameObject:
   m_ObjectHideFlags: 0
@@ -20598,13 +20605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f623404ad1ead45bf608ab8e00dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagesTexts:
-  - Sonido
-  - Sound
-  - Sonner
-  - Klang
-  - "\u0417\u0432\u0443\u043A"
-  MyTextField: {fileID: 1319065898}
 --- !u!114 &1319065898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20770,13 +20770,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f623404ad1ead45bf608ab8e00dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagesTexts:
-  - Salir al menu
-  - Exit to main menu
-  - Sortir au menu
-  - "zum Men\xFC gehen"
-  - "\u043F\u0435\u0440\u0435\u0439\u0442\u0438 \u0432 \u043C\u0435\u043D\u044E"
-  MyTextField: {fileID: 1366575049}
 --- !u!114 &1366575049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23049,13 +23042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f623404ad1ead45bf608ab8e00dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagesTexts:
-  - Resolucion
-  - Resolution
-  - "R\xE9solution"
-  - "Aufl\xF6sung"
-  - "\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0435"
-  MyTextField: {fileID: 1654624752}
 --- !u!114 &1654624752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23228,14 +23214,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f623404ad1ead45bf608ab8e00dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagesTexts:
-  - Modo pantalla completa
-  - Mode FullScreen
-  - "Mode plein \xE9cran"
-  - Vollbildmodus
-  - "\u041F\u043E\u043B\u043D\u043E\u044D\u043A\u0440\u0430\u043D\u043D\u044B\u0439
-    \u0440\u0435\u0436\u0438\u043C"
-  MyTextField: {fileID: 1803880061}
 --- !u!114 &1803880061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24787,7 +24765,6 @@ GameObject:
   - component: {fileID: 2016555618}
   - component: {fileID: 2016555617}
   - component: {fileID: 2016555616}
-  - component: {fileID: 2016555615}
   m_Layer: 0
   m_Name: Grid (1)
   m_TagString: Teleport
@@ -24795,20 +24772,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2016555615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016555614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f11fe28df33ee3f4fa84fb8f58a4a370, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SonidoMenu: {fileID: 0}
-  SonidoDeMenu: {fileID: 0}
 --- !u!66 &2016555616
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -24957,13 +24920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6f623404ad1ead45bf608ab8e00dd37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LanguagesTexts:
-  - Controles
-  - Controls
-  - "les contr\xF4les"
-  - Kontrollen
-  - "\u043A\u043E\u043D\u0442\u0440\u043E\u043B\u044C"
-  MyTextField: {fileID: 2030189162}
 --- !u!114 &2030189162
 MonoBehaviour:
   m_ObjectHideFlags: 0

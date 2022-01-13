@@ -12,13 +12,14 @@ public class EnemyController : MonoBehaviour
     private bool jump;
     private SpriteRenderer sprite;
     private bool movement = true;
-    GameObject Player;
+    GameObject player;
 
     Vector3 initialPosition;
+
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         initialPosition = transform.position;
     }
 
@@ -26,9 +27,9 @@ public class EnemyController : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 target = initialPosition;
-        float dist = Vector3.Distance(Player.transform.position, transform.position);
+        float dist = Vector3.Distance(player.transform.position, transform.position);
 
-        if (dist < visionRadius) target = Player.transform.position;
+        if (dist < visionRadius) target = player.transform.position;
 
         float fixedSpeed = speed * Time.deltaTime;
         transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
@@ -42,14 +43,18 @@ public class EnemyController : MonoBehaviour
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, visionRadius);
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        float enemyPosition = transform.position.y;
+        float playerPosition = collision.transform.position.y;
+
+        if(collision.gameObject.CompareTag("Player"))
         {
-            if (transform.position.y < collision.transform.position.y)
+            if (enemyPosition < playerPosition)
             {
                 float yOffset = 0.5f;
-                if (transform.position.y + yOffset < collision.transform.position.y)
+                if (enemyPosition + yOffset < playerPosition)
                 {
                     collision.SendMessage("EnemyJump");
                     Destroy(gameObject);
@@ -66,6 +71,7 @@ public class EnemyController : MonoBehaviour
     {
         jump = true;
     }
+
     public void EnemyBack(float enemyPosX)
     {
 
@@ -79,6 +85,7 @@ public class EnemyController : MonoBehaviour
 
         sprite.color = Color.red;
     }
+
     void EnableMovement()
     {
         movement = true;
