@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 672db9bfb9420fb49a9681ec7e0a4231
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5498620422320224559
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_0
+  - first:
+      213: -3675088338242238080
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_1
+  - first:
+      213: -1124439543397123100
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_2
+  - first:
+      213: -2642897583327695480
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_3
+  - first:
+      213: -2825651996263121883
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_4
+  - first:
+      213: -7129580897462809381
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_5
+  - first:
+      213: -166527378223467974
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_6
+  - first:
+      213: 4281469701039552761
+    second: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_7
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29fa1324260f4c40800000000000000
+      internalID: 5498620422320224559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08904e8b0a67ffcc0800000000000000
+      internalID: -3675088338242238080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb796c51303560f0800000000000000
+      internalID: -1124439543397123100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88da30096aa825bd0800000000000000
+      internalID: -2642897583327695480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cfcd7fa7449c8d0800000000000000
+      internalID: -2825651996263121883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_5
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc8159a2f3ae0d90800000000000000
+      internalID: -7129580897462809381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_6
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32fc975b3060bdf0800000000000000
+      internalID: -166527378223467974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: png-transparent-sprite-texture-atlas-pixel-art-walk-cycle-sprite-css-texture-mapping-adobe-flash_7
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 0
+        width: 115
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f87f074206da6b30800000000000000
+      internalID: 4281469701039552761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
