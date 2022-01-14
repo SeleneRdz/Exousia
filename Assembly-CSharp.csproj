@@ -38,7 +38,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Animals\Scr_Animals.cs" />
      <Compile Include="Assets\Scripts\Characters\Scr_LookPlayer.cs" />
-     <Compile Include="Assets\Scripts\Enemys\EnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemys\Scr_EnemyController.cs" />
      <Compile Include="Assets\Scripts\Interactables\Scr_TalkPlayer.cs" />
      <Compile Include="Assets\Scripts\Menus\Intro\Scr_Intro.cs" />
      <Compile Include="Assets\Scripts\Menus\Language\Scr_Language.cs" />
@@ -47,10 +47,10 @@
      <Compile Include="Assets\Scripts\Menus\Menu\Scr_Menu.cs" />
      <Compile Include="Assets\Scripts\Menus\Pause\Scr_PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\Press any key\Scr_PKScene.cs" />
-     <Compile Include="Assets\Scripts\Player\HealthBar.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_Aparicion.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_CheckAttack.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_CheckGrounded.cs" />
+     <Compile Include="Assets\Scripts\Player\Scr_HealthBar.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_MainCamera.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_MovimientoFondo.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_MovimientoLejania.cs" />

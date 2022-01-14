@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Scr_Animals : MonoBehaviour
 {
-    private Animator anim;
+    private Animator animation;
     private int random;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        animation = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -59,6 +59,6 @@ public class Scr_Animals : MonoBehaviour
         }
 
         //The animal close eyes or open
-        anim.SetBool("CloseEyes", closeEyes);
+        animation.SetBool("CloseEyes", closeEyes);
     }
 }
