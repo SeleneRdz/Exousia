@@ -20,27 +20,23 @@ public class Scr_Animals : MonoBehaviour
         
         turnLeft(random);
         turnRight(random);
-        
         closeEyes(random);
     }
-
 
     //-------------------------------------FUNCTIONS----------------------------------
 
     private void turnLeft(int random)
     {
-        if(random == 100)
-        {
-            //The animal turn to left
+        //If the random is 100 the animal turn to left
+        if(random == 100){
             transform.localScale = new Vector3(-1,1,1);
         }
     }
 
     private void turnRight(int random)
     {
-        if(random == 300)
-        {
-            //The animal turn to right
+        //If the random is 300 the animal turn to right
+        if(random == 300){
             transform.localScale = new Vector3(1,1,1);
         }
     } 
@@ -49,12 +45,10 @@ public class Scr_Animals : MonoBehaviour
     {
         bool closeEyes;
         
-        if(random == 500)
-        {
+        if(random == 500){
             closeEyes = true;
         }
-        else
-        {
+        else{
             closeEyes = false;
         }
 

@@ -20,7 +20,7 @@ public class Scr_Fuente : MonoBehaviour
     
     void OnCollisionStay2D(Collision2D col){
         if(col.gameObject.tag == "Teleport"){
-            SceneManager.LoadScene("Nivel1");
+            SceneManager.LoadScene("1-Athens");
         }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Scr_Fadeout : MonoBehaviour
 {
+    [SerializeField]
     private SpriteRenderer renderer;
     private float transparency = 1;
     private float newTransparency = 1;
@@ -13,7 +14,6 @@ public class Scr_Fadeout : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -29,6 +29,7 @@ public class Scr_Fadeout : MonoBehaviour
             renderer.color = new Color (1, 1, 1, transparency); 
         }
     }
+    
 
     void OnTriggerStay2D(Collider2D col){
 
@@ -47,7 +48,7 @@ public class Scr_Fadeout : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col){
 
-        if(col.gameObject.tag == "Player"){
+        if(col.gameObject.tag == "Player" && autoActive){
             // Change the 'color' property of the 'Sprite Renderer'
             newTransparency = 1;
             StructureCollitions.SetActive(false);

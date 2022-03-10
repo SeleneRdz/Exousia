@@ -13,12 +13,15 @@ public class Scr_EnemyController : MonoBehaviour
     private SpriteRenderer sprite;
     private bool movement = true;
     GameObject player;
+    float fixedSpeed;
 
     Vector3 target;
 
     // Start is called before the first frame update
     void Start()
     {
+        fixedSpeed = speed * Time.deltaTime;
+
         player = GameObject.FindGameObjectWithTag("Player");
         target = transform.position;
     }
@@ -29,8 +32,7 @@ public class Scr_EnemyController : MonoBehaviour
         float distance = Vector3.Distance(player.transform.position, transform.position);
 
         if (distance < visionRadius) target = player.transform.position;
-
-        float fixedSpeed = speed * Time.deltaTime;
+        
         transform.position = Vector3.MoveTowards(transform.position, target, fixedSpeed);
 
         Debug.DrawLine(transform.position, target, Color.red);
@@ -45,21 +47,17 @@ public class Scr_EnemyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        float enemyPosition = transform.position.y;
-        float playerPosition = collision.transform.position.y;
+        float enemyPosition     = transform.position.y;
+        float playerPosition    = collision.transform.position.y;
+        float yOffset           = 0.5f;
 
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            if (enemyPosition < playerPosition)
-            {
-                float yOffset = 0.5f;
-                if (enemyPosition + yOffset < playerPosition)
-                {
+        if(collision.gameObject.CompareTag("Player")){
+            if (enemyPosition < playerPosition){
+                if (enemyPosition + yOffset < playerPosition){
                     collision.SendMessage("EnemyJump");
                     Destroy(gameObject);
                 }
-                else
-                {
+                else{
                     collision.SendMessage("EnemyBack", transform.position.x);
                 }
             }

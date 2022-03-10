@@ -23,7 +23,7 @@ public class Scr_Player : MonoBehaviour
   public bool talk;
   private SpriteRenderer sprite;
   private bool movement = true;
-  private GameObject healthbar;
+  private GameObject magicBar;
 
   private bool appearance = true;
 
@@ -33,7 +33,7 @@ public class Scr_Player : MonoBehaviour
       rb2d = GetComponent<Rigidbody2D>();
       anim = GetComponent<Animator>();
       sprite = GetComponent<SpriteRenderer>();
-      healthbar = GameObject.Find("HealthBar");
+      magicBar = GameObject.Find("MagicBar");
     }
 
     private void AppareanceIsFalse(){
@@ -54,17 +54,21 @@ public class Scr_Player : MonoBehaviour
         jump = true;
       }
 
+      if(Input.GetKeyDown(KeyCode.Q) && grounded){
+        magicBar.SendMessageUpwards("useMagic", 20f);
+      }
+
       if(Input.GetKeyDown(KeyCode.Escape)){
         if(pausescreen){
           pausescreen = false;
-          pauseScreen.SetActive(false);
         }else{
           pausescreen = true;
-          pauseScreen.SetActive(true);
         }
       }
+      
+      pauseScreen.SetActive(pausescreen);
 
-      if(Input.GetKeyDown(KeyCode.O))
+      if(Input.GetKeyDown(KeyCode.E))
       {
         talk = true;
       }
@@ -153,22 +157,34 @@ public class Scr_Player : MonoBehaviour
     }
 
 
-
-
-
-
    public void EnemyJump()
     {
         jump = true;
     }
 
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable") && talk)
+        {
+            // Debug.Log("Se encontró objeto");
+            NPCInteractable interacted = collision.GetComponent<NPCInteractable>();
 
+            if (interacted != null)
+            {
+                // Ejecutamos el método del script Interactable
+                interacted.Interact();
+            }
+            else
+            {
+                Debug.Log("pero el objeto no tiene script para interactuar");
+            }
+        }
+    }
 
 
     public void EnemyBack(float enemyPosX)
     {
-        healthbar.SendMessageUpwards("TakeDamage", 20f);
 
         jump = true;
 

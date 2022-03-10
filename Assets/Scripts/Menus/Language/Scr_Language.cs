@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Scr_Lenguage : MonoBehaviour
+public class Scr_Language : MonoBehaviour
 {
     [SerializeField] string[] LanguagesTexts;
     [SerializeField] Text MyTextField;
