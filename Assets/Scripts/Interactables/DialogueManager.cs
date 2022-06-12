@@ -23,11 +23,11 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogueText = dialoguePanel.GetComponentInChildren<TextMeshProUGUI>();
-        nameText = dialoguePanel.transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>();
+        dialogueText = dialoguePanel.transform.GetChild(1).GetComponentInChildren<TextMeshProUGUI>();
+        nameText = dialoguePanel.transform.GetChild(2).GetComponentInChildren<TextMeshProUGUI>();
 
         //We get the third child of dialogue panel (Buttonn)
-        continueButton = dialoguePanel.transform.GetChild(2).GetComponent<Button>();
+        continueButton = dialoguePanel.transform.GetChild(3).GetComponent<Button>();
         if (continueButton != null)
         {
             //add listener

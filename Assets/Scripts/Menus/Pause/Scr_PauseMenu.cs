@@ -44,16 +44,16 @@ public class Scr_PauseMenu : MonoBehaviour
         sliderValue = valor;
         PlayerPrefs.SetFloat("volumenAudio", sliderValue);
         AudioListener.volume = slider.value;
-        // RevisarSiEstoyMute();
+        RevisarSiEstoyMute();
     }
 
-    // public void RevisarSiEstoyMute(){
-    //     if(sliderValue == 0){
-    //         imageMute.enabled = true;
-    //     }else{
-    //         imageMute.enabled = false;
-    //     }
-    // }
+    public void RevisarSiEstoyMute(){
+        if(sliderValue == 0){
+            imageMute.enabled = true;
+        }else{
+            imageMute.enabled = false;
+        }
+    }
 
     public void ActivarPantallaCompleta(bool pantallaCompleta){
         Screen.fullScreen = pantallaCompleta;

@@ -20,7 +20,6 @@ public class Scr_Player : MonoBehaviour
   private bool stop;
   private bool attack;
   private bool pausescreen = false;
-  public bool talk;
   private SpriteRenderer sprite;
   private bool movement = true;
   private GameObject magicBar;
@@ -68,11 +67,6 @@ public class Scr_Player : MonoBehaviour
       
       pauseScreen.SetActive(pausescreen);
 
-      if(Input.GetKeyDown(KeyCode.E))
-      {
-        talk = true;
-      }
-
       Handleinput();
 
     }
@@ -107,7 +101,6 @@ public class Scr_Player : MonoBehaviour
     private void ResetValues()
     {
       attack = false;
-      talk = false;
     }
 
     
@@ -165,7 +158,7 @@ public class Scr_Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Interactable") && talk)
+        if (collision.gameObject.CompareTag("Interactable") && Input.GetKeyDown(KeyCode.E))
         {
             // Debug.Log("Se encontró objeto");
             NPCInteractable interacted = collision.GetComponent<NPCInteractable>();
