@@ -41,6 +41,8 @@
      <Compile Include="Assets\Scripts\Enemys\Scr_EnemyController.cs" />
      <Compile Include="Assets\Scripts\Interactables\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Interactables\Interactable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\MoneyInteractable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\MoneyManager.cs" />
      <Compile Include="Assets\Scripts\Interactables\NPCInteractable.cs" />
      <Compile Include="Assets\Scripts\Interactables\Scr_TalkPlayer.cs" />
      <Compile Include="Assets\Scripts\Menus\Intro\Scr_Intro.cs" />

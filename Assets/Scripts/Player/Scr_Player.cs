@@ -158,21 +158,40 @@ public class Scr_Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Interactable") && Input.GetKeyDown(KeyCode.E))
+        if (collision.gameObject.CompareTag("Interactable") && Input.GetKeyUp(KeyCode.E))
         {
             // Debug.Log("Se encontró objeto");
-            NPCInteractable interacted = collision.GetComponent<NPCInteractable>();
+            NPCInteractable npcInteraction = collision.GetComponent<NPCInteractable>();
 
-            if (interacted != null)
+            if(npcInteraction != null)
             {
                 // Ejecutamos el método del script Interactable
-                interacted.Interact();
+                npcInteraction.Interact();
             }
             else
             {
                 Debug.Log("pero el objeto no tiene script para interactuar");
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+      if(collision.gameObject.CompareTag("Interactable"))
+      {
+          Debug.Log("Se encontró objeto");
+          MoneyInteractable moneyInteraction = collision.GetComponent<MoneyInteractable>();
+        
+          if(moneyInteraction != null)
+          {
+              // Ejecutamos el método del script Interactable
+              moneyInteraction.Interact();
+          }
+          else
+          {
+              Debug.Log("pero el objeto no tiene script para interactuar");
+          }
+      }
     }
 
 
@@ -189,9 +208,6 @@ public class Scr_Player : MonoBehaviour
 
         sprite.color = Color.red;
     }
-
-
-
 
     
     void EnableMovement()
