@@ -168,10 +168,6 @@ public class Scr_Player : MonoBehaviour
                 // Ejecutamos el método del script Interactable
                 npcInteraction.Interact();
             }
-            else
-            {
-                Debug.Log("pero el objeto no tiene script para interactuar");
-            }
         }
     }
 
@@ -179,17 +175,12 @@ public class Scr_Player : MonoBehaviour
     {
       if(collision.gameObject.CompareTag("Interactable"))
       {
-          Debug.Log("Se encontró objeto");
           MoneyInteractable moneyInteraction = collision.GetComponent<MoneyInteractable>();
         
           if(moneyInteraction != null)
           {
               // Ejecutamos el método del script Interactable
               moneyInteraction.Interact();
-          }
-          else
-          {
-              Debug.Log("pero el objeto no tiene script para interactuar");
           }
       }
     }

@@ -31,6 +31,8 @@ public class MoneyInteractable : Interactable
         
         _moneyManager.SetMoney(actualMoney);
         //Usar un manejador de di�logos para mostrar los di�logos
+        Destroy(gameObject);
+        
     }
 
 }
