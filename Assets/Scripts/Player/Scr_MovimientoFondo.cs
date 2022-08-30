@@ -21,7 +21,7 @@ public class Scr_MovimientoFondo : MonoBehaviour
     void OnBecameInvisible(){
         Vector3 reset;
 
-        reset = new Vector3(25, 0, 0);
+        reset = new Vector3(35, 0, 0);
 
         transform.position += reset;
     }

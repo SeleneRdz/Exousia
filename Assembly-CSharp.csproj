@@ -41,10 +41,12 @@
      <Compile Include="Assets\Scripts\Enemys\Scr_EnemyController.cs" />
      <Compile Include="Assets\Scripts\Interactables\DialogueManager.cs" />
      <Compile Include="Assets\Scripts\Interactables\Interactable.cs" />
+     <Compile Include="Assets\Scripts\Interactables\KarmaManager.cs" />
      <Compile Include="Assets\Scripts\Interactables\MoneyInteractable.cs" />
      <Compile Include="Assets\Scripts\Interactables\MoneyManager.cs" />
      <Compile Include="Assets\Scripts\Interactables\NPCInteractable.cs" />
      <Compile Include="Assets\Scripts\Interactables\Scr_TalkPlayer.cs" />
+     <Compile Include="Assets\Scripts\Interactables\StoreInteractable.cs" />
      <Compile Include="Assets\Scripts\Menus\Intro\Scr_Intro.cs" />
      <Compile Include="Assets\Scripts\Menus\Language\Scr_Language.cs" />
      <Compile Include="Assets\Scripts\Menus\Login\Scr_Login.cs" />
@@ -56,6 +58,7 @@
      <Compile Include="Assets\Scripts\Player\Scr_CheckAttack.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_CheckGrounded.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Player\Scr_KarmaBar.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_MagicBar.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_MainCamera.cs" />
      <Compile Include="Assets\Scripts\Player\Scr_MovimientoFondo.cs" />
