@@ -20,10 +20,9 @@ public class Scr_Player : MonoBehaviour
   private bool stop;
   private bool attack;
   private bool pausescreen = false;
-  public bool talk;
   private SpriteRenderer sprite;
   private bool movement = true;
-  private GameObject healthbar;
+  private GameObject magicBar;
 
   private bool appearance = true;
 
@@ -33,7 +32,7 @@ public class Scr_Player : MonoBehaviour
       rb2d = GetComponent<Rigidbody2D>();
       anim = GetComponent<Animator>();
       sprite = GetComponent<SpriteRenderer>();
-      healthbar = GameObject.Find("HealthBar");
+      magicBar = GameObject.Find("MagicBar");
     }
 
     private void AppareanceIsFalse(){
@@ -54,20 +53,19 @@ public class Scr_Player : MonoBehaviour
         jump = true;
       }
 
+      if(Input.GetKeyDown(KeyCode.Q) && grounded){
+        magicBar.SendMessageUpwards("useMagic", 20f);
+      }
+
       if(Input.GetKeyDown(KeyCode.Escape)){
         if(pausescreen){
           pausescreen = false;
-          pauseScreen.SetActive(false);
         }else{
           pausescreen = true;
-          pauseScreen.SetActive(true);
         }
       }
-
-      if(Input.GetKeyDown(KeyCode.O))
-      {
-        talk = true;
-      }
+      
+      pauseScreen.SetActive(pausescreen);
 
       Handleinput();
 
@@ -103,7 +101,6 @@ public class Scr_Player : MonoBehaviour
     private void ResetValues()
     {
       attack = false;
-      talk = false;
     }
 
     
@@ -153,22 +150,44 @@ public class Scr_Player : MonoBehaviour
     }
 
 
-
-
-
-
    public void EnemyJump()
     {
         jump = true;
     }
 
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Interactable") && Input.GetKeyUp(KeyCode.E))
+        {
+            // Debug.Log("Se encontró objeto");
+            NPCInteractable npcInteraction = collision.GetComponent<NPCInteractable>();
 
+            if(npcInteraction != null)
+            {
+                // Ejecutamos el método del script Interactable
+                npcInteraction.Interact();
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+      if(collision.gameObject.CompareTag("Interactable"))
+      {
+          MoneyInteractable moneyInteraction = collision.GetComponent<MoneyInteractable>();
+        
+          if(moneyInteraction != null)
+          {
+              // Ejecutamos el método del script Interactable
+              moneyInteraction.Interact();
+          }
+      }
+    }
 
 
     public void EnemyBack(float enemyPosX)
     {
-        healthbar.SendMessageUpwards("TakeDamage", 20f);
 
         jump = true;
 
@@ -180,9 +199,6 @@ public class Scr_Player : MonoBehaviour
 
         sprite.color = Color.red;
     }
-
-
-
 
     
     void EnableMovement()

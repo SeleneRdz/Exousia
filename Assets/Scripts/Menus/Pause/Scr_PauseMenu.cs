@@ -14,7 +14,7 @@ public class Scr_PauseMenu : MonoBehaviour
     public Toggle toggle;  
     public TMP_Dropdown resolucionesDropDown;
     Resolution[] resoluciones;
-    public GameObject listaLenguajes;
+    public int listaLenguajes;
     public static int indiceLenguaje = 0;
     Transform[] children;
     public GameObject pauseMenu;
@@ -44,16 +44,16 @@ public class Scr_PauseMenu : MonoBehaviour
         sliderValue = valor;
         PlayerPrefs.SetFloat("volumenAudio", sliderValue);
         AudioListener.volume = slider.value;
-        // RevisarSiEstoyMute();
+        RevisarSiEstoyMute();
     }
 
-    // public void RevisarSiEstoyMute(){
-    //     if(sliderValue == 0){
-    //         imageMute.enabled = true;
-    //     }else{
-    //         imageMute.enabled = false;
-    //     }
-    // }
+    public void RevisarSiEstoyMute(){
+        if(sliderValue == 0){
+            imageMute.enabled = true;
+        }else{
+            imageMute.enabled = false;
+        }
+    }
 
     public void ActivarPantallaCompleta(bool pantallaCompleta){
         Screen.fullScreen = pantallaCompleta;
@@ -92,8 +92,8 @@ public class Scr_PauseMenu : MonoBehaviour
     public void CambiarLenguajeDer(){
         indiceLenguaje++;
 
-        if(indiceLenguaje > listaLenguajes.transform.childCount-1) indiceLenguaje = 0;
-        else if(indiceLenguaje < 0 ) indiceLenguaje = listaLenguajes.transform.childCount - 1;
+        if(indiceLenguaje > listaLenguajes-1) indiceLenguaje = 0;
+        else if(indiceLenguaje < 0 ) indiceLenguaje = listaLenguajes - 1;
 
         CambiarLenguaje();
     }
@@ -101,18 +101,15 @@ public class Scr_PauseMenu : MonoBehaviour
     public void CambiarLenguajeIzq(){
         indiceLenguaje--;
 
-        if(indiceLenguaje > listaLenguajes.transform.childCount-1) indiceLenguaje = 0;
-        else if(indiceLenguaje < 0 ) indiceLenguaje = listaLenguajes.transform.childCount - 1;
+        if(indiceLenguaje > listaLenguajes-1) indiceLenguaje = 0;
+        else if(indiceLenguaje < 0 ) indiceLenguaje = listaLenguajes - 1;
 
         CambiarLenguaje();
     }
 
     public void CambiarLenguaje(){
 
-        for(int i = 0; i < listaLenguajes.transform.childCount; i++){
-            listaLenguajes.transform.GetChild(i).gameObject.SetActive(false);
-        }
-        listaLenguajes.transform.GetChild(indiceLenguaje).gameObject.SetActive(true);
+    
         pauseMenu.SetActive(false);
         pauseMenu.SetActive(true);
         PlayerPrefs.SetInt("indiceLenguaje",indiceLenguaje);
